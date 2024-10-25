@@ -33,7 +33,7 @@
 <h2>Biography</h2>
     <p> I am a research scientist at OpenAI. I'm interested in large-scale deep generative models and reinforcement learning algorithms. I love to find a sweet balance between mathmetical theory and practical tricks. </p>
     
-    <p> I received my Ph.D. degree from <a href="http://ml.cs.tsinghua.edu.cn/index.html">TSAIL Group</a> in December 2023 at <a href="https://www.tsinghua.edu.cn">Tsinghua University</a>, advised by <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a>. During my Ph.D., I also worked closely with <a href="https://ml.cs.tsinghua.edu.cn/~jianfei/">Jianfei Chen</a> and <a href="https://zhenxuan00.github.io/">Chongxuan Li</a>. Before that, I received my B.S. degree from the Department of Computer Science and Technology, Tsinghua University in July, 2019.</p>
+    <p> I received my Ph.D. degree from <a href="http://ml.cs.tsinghua.edu.cn/index.html">TSAIL Group</a> in December 2023 at <a href="https://www.tsinghua.edu.cn">Tsinghua University</a>, advised by <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a>. During my Ph.D., I also worked closely with <a href="https://ml.cs.tsinghua.edu.cn/~jianfei/">Jianfei Chen</a> and <a href="https://zhenxuan00.github.io/">Chongxuan Li</a>. Before that, I received my B.E. degree from the Department of Computer Science and Technology, Tsinghua University in July, 2019.</p>
 
     <p>
         I had research experiences on consistency models, diffusion models, normalizing flows and energy-based models, and their applications in image generation, 3D generation and reinforcement learning.
@@ -47,29 +47,39 @@
 <h2>Research Highlight</h2>
 <ul>
     <li>
-        <a href='https://arxiv.org/abs/2305.16213'>ProlificDreamer: High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation</a> <br>
-        Zhengyi Wang*, <strong>Cheng Lu*</strong>, Yikai Wang, Fan Bao, Chongxuan Li, Hang Su, Jun Zhu <br>
-        <a href='https://github.com/thu-ml/prolificdreamer'>[code]</a>
-        <a href='https://ml.cs.tsinghua.edu.cn/prolificdreamer/'>[project]</a> <br>
+        <a href='https://arxiv.org/abs/2410.11081'>Simplifying, Stabilizing and Scaling Continuous-Time Consistency Models</a> <br>
+        <!-- <strong>Cheng Lu</strong>, Yang Song <br> -->
+        <a href='https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/'>[blog]</a> <br>
         <ul>
             <li>
-                <strong>High-fidelity text-to-3D generation with solely 2D diffusion models.</strong>
+                Continuous-time consistency models with sample quality comparable to leading diffusion models in just two sampling steps.
             </li>
         </ul>
     </li>
     <li>
-        <a href='https://arxiv.org/abs/2206.00927'>DPM-Solver</a> and <a href='https://arxiv.org/abs/2211.01095'>DPM-Solver++</a>, training-free fast samplers for diffusion models.  <br>
+        <a href='https://arxiv.org/abs/2305.16213'>ProlificDreamer & Variational Score Distillation</a> <br>
+        <!-- Zhengyi Wang*, <strong>Cheng Lu*</strong>, Yikai Wang, Fan Bao, Chongxuan Li, Hang Su, Jun Zhu <br> -->
+        <a href='https://github.com/thu-ml/prolificdreamer'>[code]</a>
+        <a href='https://ml.cs.tsinghua.edu.cn/prolificdreamer/'>[project]</a> <br>
+        <ul>
+            <li>
+                High-fidelity text-to-3D generation with solely 2D diffusion models.
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href='https://arxiv.org/abs/2206.00927'>DPM-Solver</a>, <a href='https://arxiv.org/abs/2211.01095'>DPM-Solver++</a> and <a href='https://arxiv.org/abs/2310.13268'>DPM-Solver-v3</a> <br>
         <a href='https://github.com/LuChengTHU/dpm-solver'>[code]</a>
         <a href="https://huggingface.co/stabilityai/stable-diffusion-2-1#examples">[demo]</a> <br>
         <ul>
             <li>
-                <strong>Training-free fast sampler for text-to-image diffusion models (such as Stable Diffusion).</strong>
+                Training-free fast samplers for diffusion models (such as Stable Diffusion).
             </li>
             <li>
                 Widely-applied in various of text-to-image libraries and applications, such as <a href="https://beta.dreamstudio.ai/home">DreamStudio</a>, <a href="https://stableboost.ai/">StableBoost</a>, <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable-Diffusion-WebUI</a>, <a href="https://github.com/huggingface/diffusers">Diffusers</a>, <a href="https://github.com/Stability-AI/stablediffusion">official Code of Stable Diffusion v2</a>, <a href="https://github.com/CompVis/stable-diffusion">official Code of Stable Diffusion v1</a>, <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">online demo of Stable Diffusion v2</a>, <a href="https://huggingface.co/spaces/runwayml/stable-diffusion-v1-5">online demo of Stable Diffusion v1.5</a>, <a href="https://github.com/apple/ml-stable-diffusion">Apple's ML-Stable-Diffusion</a>.
             </li>
         </ul>
-        Corresponding papers: 
+        <!-- Corresponding papers: 
         <ul>
             <li>
                 <a href='https://arxiv.org/abs/2206.00927'>DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps</a>. <br>
@@ -79,10 +89,14 @@
                 <a href='https://arxiv.org/abs/2211.01095'>DPM-Solver++: Fast Solver for Guided Sampling of Diffusion Probabilistic Models</a> <br>
                 <strong>Cheng Lu</strong>, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, Jun Zhu <br>
             </li>
-        </ul>
+            <li>
+                <a href='https://arxiv.org/abs/2310.13268'>DPM-Solver-v3: Improved Diffusion ODE Solvers with Empirical Model Statistics</a> <br>
+                Kaiwen Zheng*, <strong>Cheng Lu*</strong>, Jianfei Chen, Jun Zhu <br>
+            </li>
+        </ul> -->
     </li>
 </ul>
-* indicates co-first authors.
+<!-- * indicates co-first authors. -->
 
 <h2>Publications</h2>
 <ul>
@@ -182,6 +196,11 @@
 <h2>Preprints</h2>
 <ul>
     <li>
+        <a href='https://arxiv.org/abs/2410.11081'>Simplifying, Stabilizing and Scaling Continuous-Time Consistency Models</a> <br>
+        <strong>Cheng Lu</strong>, Yang Song <br>
+        <a href='https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/'>[blog]</a> <br>
+    </li>
+    <li>
         <a href='https://arxiv.org/abs/2211.01095'>DPM-Solver++: Fast Solver for Guided Sampling of Diffusion Probabilistic Models</a> <br>
         <strong>Cheng Lu</strong>, Yuhao Zhou, Fan Bao, Jianfei Chen, Chongxuan Li, Jun Zhu <br>
         <a href='https://github.com/LuChengTHU/dpm-solver'>[code]</a> <br>
@@ -190,6 +209,11 @@
 
 <h2>Selected Honors & Awards</h2>
 <ul>
+    <li>
+        <strong>
+            Outstanding Doctoral Thesis, Tsinghua University
+        </strong>, 2024.06
+    </li>
     <li>
         <strong>
             <a href="https://jw.beijing.gov.cn/tzgg/202401/t20240102_3522508.html">Beijing Outstanding Graduates</a>
@@ -236,16 +260,12 @@
     <strong><a href="https://github.com/huggingface/diffusers">huggingface/diffusers</a></strong>, the most widely-used library for diffusion models.
 
 
-<!-- <h2>Invited Talks</h2>
-<strong>DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps, ByteDance</strong>, 2022.11 <a href="https://luchengthu.github.io/files/dpmsolver.pdf">[slide]</a><br>
- -->
-
 <h3>Teaching</h3>
 2021 Spring, Head TA in <strong>Statistical Learning Theory and Applications</strong>, instructed by <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a><br>
 2021 Spring, TA in <strong>Deep Learning</strong>, instructed by <a href="http://www.xlhu.cn/">Prof. Xiaolin Hu</a> and <a href="http://ml.cs.tsinghua.edu.cn/~jun/">Prof. Jun Zhu</a><br>
 
 <h2>Personal</h2>
-I was a bass singer in Chorus of Tsinghua University with a vocal range of C2-F4 (where C2 is also known as "low C"). I won the top ten compus singers competition of Tsinghua University in 2019 by singing a famous jazz song <i>Autumn Leaves</i>. I love singing!
+I was a bass singer in Chorus of Tsinghua University. I won the top ten compus singers competition of Tsinghua University in 2019 by singing a famous jazz song <i>Autumn Leaves</i>. I love singing!
 
 </div>
 
